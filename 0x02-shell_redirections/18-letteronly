@@ -1,2 +1,2 @@
 #!/bin/bash
-tr "A" "L" | tr "c" "o"
+tr "A" "L" < /etc/ssh/sshd_config | tr "c" "o"
