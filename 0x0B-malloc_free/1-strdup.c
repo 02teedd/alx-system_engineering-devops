@@ -3,9 +3,9 @@
 #include <stdlib.h>
 
 /**
- * _strdup - return a pointer to a newly allocated 
+ * _strdup - return a pointer to a newly allocated
  * space in memory also duplicate the string it holds
- * to the new space 
+ * to the new space
  *
  * @str: initial input string
  *
@@ -25,19 +25,19 @@ char *_strdup(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-	        i++;
+		i++;
 	}
 
 	strdout = (char *)malloc(sizeof(char) * (1 + 1));
 
 	if (strdout == NULL)
 	{
-	        return (NULL);
+		return (NULL);
 	}
 
 	for (j = 0; j <= i; j++)
 	{
-	        strdout[j] = str[j];
+		strdout[j] = str[j];
 	}
 	return (strdout);
 }
