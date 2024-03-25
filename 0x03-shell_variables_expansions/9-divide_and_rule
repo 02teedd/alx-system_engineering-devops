@@ -1,3 +1,2 @@
-#!/bin/bash
 result=$(echo "scale=10; $POWER / $DIVIDE" | bc)
 echo "$result"
